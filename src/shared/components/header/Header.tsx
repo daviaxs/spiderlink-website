@@ -2,7 +2,7 @@
 
 import { SpiderLink } from '@/shared/assets/svgs/spiderlink'
 import { useShowHeader } from '@/shared/hooks/useShowHeader'
-import Link from 'next/link'
+import { Navigation } from './utils/components/navigation/Navigation'
 
 export function Header() {
   const showHeader = useShowHeader()
@@ -17,25 +17,7 @@ export function Header() {
       <div className="flex items-center gap-6">
         <SpiderLink />
 
-        <nav>
-          <ul className="flex gap-4 text-black">
-            <Link href={'/'}>
-              <li className="font-bold">SpiderLink</li>
-            </Link>
-
-            <Link href={'/about'}>
-              <li className="font-bold">Sobre</li>
-            </Link>
-
-            <Link href={'/plans'}>
-              <li className="font-bold">Planos</li>
-            </Link>
-
-            <Link href={'/faq'}>
-              <li className="font-bold">FAQ</li>
-            </Link>
-          </ul>
-        </nav>
+        <Navigation />
       </div>
     </header>
   )
