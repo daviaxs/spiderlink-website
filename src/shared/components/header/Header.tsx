@@ -4,7 +4,7 @@ import { SpiderLink } from '@/shared/assets/svgs/spiderlink'
 import { useShowHeader } from '@/shared/hooks/useShowHeader'
 import { Button } from '../button/Button'
 import { Handshake } from 'lucide-react'
-import { DropdownMenuHeader } from './utils/components/dropdown-menu/DropdownMenu'
+import { DropdownMenuHeader } from './utils/components/dropdown-menu-header/DropdownMenuHeader'
 
 export function Header() {
   const showHeader = useShowHeader()
