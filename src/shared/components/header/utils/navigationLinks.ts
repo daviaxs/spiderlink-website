@@ -1,7 +1,7 @@
 export const navigationLinks = [
   {
     href: '/',
-    label: 'SpiderLink',
+    label: 'Início',
   },
   {
     href: '/about',
