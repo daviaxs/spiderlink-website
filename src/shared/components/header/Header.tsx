@@ -2,9 +2,9 @@
 
 import { SpiderLink } from '@/shared/assets/svgs/spiderlink'
 import { useShowHeader } from '@/shared/hooks/useShowHeader'
-import { Navigation } from './utils/components/navigation/Navigation'
 import { Button } from '../button/Button'
 import { Handshake } from 'lucide-react'
+import { DropdownMenuHeader } from './utils/components/dropdown-menu/DropdownMenu'
 
 export function Header() {
   const showHeader = useShowHeader()
@@ -16,10 +16,13 @@ export function Header() {
         ${showHeader ? '' : 'transform -translate-y-full'}
         `}
     >
-      <div className="flex items-center gap-6">
-        <SpiderLink />
+      <div className="flex items-center gap-4">
+        <DropdownMenuHeader />
 
-        <Navigation />
+        <div className="flex items-center justify-center gap-2">
+          <SpiderLink />
+          <p className="font-bold text-[1.5rem]">SpiderLink</p>
+        </div>
       </div>
 
       <Button>
