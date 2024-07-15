@@ -1,3 +1,4 @@
+import { Button } from '@/shared/components/button/Button'
 import Link from 'next/link'
 
 export default function NotFound() {
@@ -12,9 +13,7 @@ export default function NotFound() {
       </div>
 
       <Link href="/">
-        <button className="bg-purple px-4 py-2 rounded-lg font-bold text-white">
-          Voltar
-        </button>
+        <Button>Voltar</Button>
       </Link>
     </main>
   )
