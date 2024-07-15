@@ -2,3 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  overflow-x: hidden;
+}
+
+main, body {
+  scrollbar-width: thin;
+  scrollbar-color: #b8b8b8 #fff;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #fff; 
+}
+ 
+*::-webkit-scrollbar-thumb {
+  background: #b8b8b8; 
+}
