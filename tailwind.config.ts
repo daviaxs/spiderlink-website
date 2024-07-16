@@ -13,7 +13,7 @@ const config = {
     screens: {
       sm: '500px',
       md: '768px',
-      lg: '1024px',
+      lg: '1128px',
     },
     colors: {
       white: '#ffffff',
