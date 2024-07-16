@@ -5,6 +5,7 @@ import { useShowHeader } from '@/shared/hooks/useShowHeader'
 import { Button } from '../button/Button'
 import { Handshake } from 'lucide-react'
 import { DropdownMenuHeader } from './utils/components/dropdown-menu-header/DropdownMenuHeader'
+import Link from 'next/link'
 
 export function Header() {
   const showHeader = useShowHeader()
@@ -16,14 +17,16 @@ export function Header() {
         ${showHeader ? '' : 'transform -translate-y-full'}
         `}
     >
-      <div className="flex items-center gap-4">
-        <DropdownMenuHeader />
+      <Link href="/">
+        <div className="flex items-center gap-4">
+          <DropdownMenuHeader />
 
-        <div className="flex items-center justify-center gap-2">
-          <SpiderLink />
-          <p className="font-bold text-[1.5rem] max-sm:hidden">SpiderLink</p>
+          <div className="flex items-center justify-center gap-2">
+            <SpiderLink />
+            <p className="font-bold text-[1.5rem] max-sm:hidden">SpiderLink</p>
+          </div>
         </div>
-      </div>
+      </Link>
 
       <Button className="h-full">
         <p className="max-sm:text-[0.7rem]">COMECE GRÁTIS</p>
