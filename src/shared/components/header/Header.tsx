@@ -21,12 +21,13 @@ export function Header() {
 
         <div className="flex items-center justify-center gap-2">
           <SpiderLink />
-          <p className="font-bold text-[1.5rem]">SpiderLink</p>
+          <p className="font-bold text-[1.5rem] max-sm:hidden">SpiderLink</p>
         </div>
       </div>
 
-      <Button>
-        COMECE AGORA <Handshake />
+      <Button className="h-full">
+        <p className="max-sm:text-[0.7rem]">COMECE GRÁTIS</p>
+        <Handshake className="max-sm:hidden" />
       </Button>
     </header>
   )
