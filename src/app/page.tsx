@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main>
+    <>
       <div className="flex items-center w-full justify-between gap-[6rem] max-lg:flex-col max-lg:gap-[4rem]">
         <div className="flex flex-col gap-[1.875rem] max-lg:text-center max-lg:items-center">
           <div>
@@ -26,6 +26,6 @@ export default function Home() {
 
         <Image src={SpiderLinkApplicationImgsDemo} alt="" />
       </div>
-    </main>
+    </>
   )
 }
