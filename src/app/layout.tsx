@@ -19,7 +19,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={nunito.className}>
         <Header />
-        <main className="flex flex-col px-[3.75rem] py-[2rem]">{children}</main>
+        <main className="flex flex-col px-[3.75rem] py-[2rem] gap-[3.75rem]">
+          {children}
+        </main>
       </body>
     </html>
   )
