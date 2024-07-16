@@ -10,6 +10,11 @@ const config = {
   ],
   prefix: '',
   theme: {
+    screens: {
+      sm: '500px',
+      md: '768px',
+      lg: '1024px',
+    },
     colors: {
       white: '#ffffff',
       black: '#0B0B0B',
