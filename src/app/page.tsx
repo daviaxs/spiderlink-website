@@ -2,6 +2,8 @@ import { Button } from '@/shared/components/button/Button'
 import SpiderLinkApplicationImgsDemo from '@/shared/assets/imgs/spider-link-application-imgs-demo.png'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Title } from '@/shared/components/texts/Title'
+import { Text } from '@/shared/components/texts/Text'
 
 export default function Home() {
   return (
@@ -29,21 +31,22 @@ export default function Home() {
       </div>
 
       <div className="relative flex flex-col outline outline-1 rounded-[1.25rem] gap-[1.875rem] w-full h-fit py-[4.375rem] px-[1.875rem] text-center overflow-hidden">
-        <h2 className="font-black text-[2rem] leading-[110%]">
-          Pronto para transformar seu negócio?
-        </h2>
+        <Title>Pronto para transformar seu negócio?</Title>
 
         <div>
-          <p className="font-extrabold text-[1.2rem] opacity-90">
-            Descubra como a SpiderLink pode revolucionar seu Food Service.
-          </p>
-          <p className="font-extrabold text-[1.2rem] opacity-90">
+          <Text className="opacity-90">
+            Descubra como a SpiderLink pode revolucionar seu Food Service.{' '}
+          </Text>
+          <Text className="opacity-90">
             Agende uma{' '}
-            <Link href={'/plans'} className="text-purple">
+            <Link
+              href={'/plans'}
+              className="text-purple underline-offset-1 underline"
+            >
               Demonstração Gratuita
             </Link>{' '}
             e veja nossas soluções em ação!
-          </p>
+          </Text>
         </div>
 
         <div>
