@@ -8,6 +8,13 @@ interface TextProps extends HTMLAttributes<HTMLParagraphElement> {
 
 export function Text({ children, className }: TextProps) {
   return (
-    <p className={cn(`font-extrabold text-[1.2rem]`, className)}>{children}</p>
+    <p
+      className={cn(
+        `font-extrabold text-[1.2rem] max-sm:text-[0.9rem]`,
+        className,
+      )}
+    >
+      {children}
+    </p>
   )
 }
