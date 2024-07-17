@@ -29,7 +29,7 @@ export function Header() {
       </Link>
 
       <Button className="h-full">
-        <p className="max-sm:text-[0.7rem]">COMECE GRÁTIS</p>
+        <p className="max-sm:text-[0.7rem] text-white">COMECE GRÁTIS</p>
         <Handshake className="max-sm:hidden" />
       </Button>
     </header>
