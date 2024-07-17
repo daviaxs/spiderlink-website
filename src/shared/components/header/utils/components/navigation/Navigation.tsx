@@ -5,7 +5,7 @@ import { DropdownMenuItem } from '@radix-ui/react-dropdown-menu'
 export function Navigation() {
   return (
     <nav>
-      <ul className="flex flex-col gap-2 text-black">
+      <ul className="flex flex-col gap-2">
         {navigationLinks.map(({ href, label }) => (
           <Link
             key={label}
