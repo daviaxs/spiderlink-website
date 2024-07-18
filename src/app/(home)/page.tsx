@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { Title } from '@/shared/components/texts/Title'
 import { Text } from '@/shared/components/texts/Text'
 import { Benefits } from './utils/Benefits'
+import { SubTitle } from '@/shared/components/texts/SubTitle'
 
 export default function Home() {
   return (
@@ -69,8 +70,8 @@ export default function Home() {
                 <Image src={img} alt="" />
               </div>
 
-              <div>
-                <Title className="text-center">{title}</Title>
+              <div className="flex flex-col gap-[1.25rem]">
+                <SubTitle className="text-center">{title}</SubTitle>
 
                 <Text className="text-center opacity-90 font-bold">
                   {description}
