@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <div className="flex items-center w-full justify-between gap-[6rem] max-lg:flex-col max-lg:gap-[4rem]">
-        <div className="flex flex-col gap-[1.875rem] max-lg:text-center max-lg:items-center">
+        <div className="flex flex-col gap-[1.875rem] max-lg:text-center max-lg:items-center lg:w-[50%]">
           <div>
             <h1 className="font-black text-[3rem] leading-tight max-sm:text-[2rem]">
               Descomplique a Gestão do Seu{' '}
