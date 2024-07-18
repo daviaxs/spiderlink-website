@@ -4,9 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Title } from '@/shared/components/texts/Title'
 import { Text } from '@/shared/components/texts/Text'
-import SpiderLinkBenefitImg001 from '@/shared/assets/imgs/spider-link-benefit-img-001.png'
-import SpiderLinkBenefitImg002 from '@/shared/assets/imgs/spider-link-benefit-img-002.png'
-import SpiderLinkBenefitImg003 from '@/shared/assets/imgs/spider-link-benefit-img-003.png'
+import { Benefits } from './utils/Benefits'
 
 export default function Home() {
   return (
@@ -61,51 +59,25 @@ export default function Home() {
       <div className="flex flex-col items-center justify-start gap-[1.875rem]">
         <Title className="text-center">Com a SpiderLink, você pode</Title>
 
-        <div className="flex flex-wrap items-center justify-center gap-[5rem]">
-          <div className="w-[16.25rem] flex flex-col gap-[1.875rem]">
-            <div className="border border-1 border-black rounded-[0.75rem]">
-              <Image src={SpiderLinkBenefitImg001} alt="" />
+        <div className="flex flex-wrap items-start justify-center gap-[5rem]">
+          {Benefits.map(({ img, title, description }) => (
+            <div
+              className="w-[16.25rem] flex flex-col gap-[1.875rem]"
+              key={title}
+            >
+              <div className="border border-1 border-black rounded-[0.75rem]">
+                <Image src={img} alt="" />
+              </div>
+
+              <div>
+                <Title className="text-center">{title}</Title>
+
+                <Text className="text-center opacity-90 font-bold">
+                  {description}
+                </Text>
+              </div>
             </div>
-
-            <div>
-              <Title className="text-center">Aumentar suas vendas</Title>
-
-              <Text className="text-center opacity-90 font-bold">
-                Ofereça aos seus clientes a comodidade de fazer pedidos online e
-                reservas.
-              </Text>
-            </div>
-          </div>
-
-          <div className="w-[16.25rem] flex flex-col gap-[1.875rem]">
-            <div className="border border-1 border-black rounded-[0.75rem]">
-              <Image src={SpiderLinkBenefitImg002} alt="" />
-            </div>
-
-            <div>
-              <Title className="text-center">Aumentar suas vendas</Title>
-
-              <Text className="text-center opacity-90 font-bold">
-                Ofereça aos seus clientes a comodidade de fazer pedidos online e
-                reservas.
-              </Text>
-            </div>
-          </div>
-
-          <div className="w-[16.25rem] flex flex-col gap-[1.875rem]">
-            <div className="border border-1 border-black rounded-[0.75rem]">
-              <Image src={SpiderLinkBenefitImg003} alt="" />
-            </div>
-
-            <div>
-              <Title className="text-center">Aumentar suas vendas</Title>
-
-              <Text className="text-center opacity-90 font-bold">
-                Ofereça aos seus clientes a comodidade de fazer pedidos online e
-                reservas.
-              </Text>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </>
