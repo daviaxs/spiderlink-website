@@ -10,7 +10,7 @@ export function SubTitle({ children, className }: SubTitleProps) {
   return (
     <h3
       className={cn(
-        `font-black text-[1.5rem] max-sm:text-[1rem] leading-[110%]`,
+        `font-black text-[1.5rem] max-sm:text-[1.25rem] leading-[110%]`,
         className,
       )}
     >
