@@ -10,7 +10,7 @@ export function Text({ children, className }: TextProps) {
   return (
     <p
       className={cn(
-        `font-extrabold text-[1.2rem] max-sm:text-[0.9rem]`,
+        `font-extrabold text-[1.2rem] max-sm:text-[0.9rem] leading-[110%]`,
         className,
       )}
     >
