@@ -61,7 +61,7 @@ export default function Home() {
       <div className="flex flex-col items-center justify-start gap-[1.875rem]">
         <Title className="text-center">Com a SpiderLink, você pode</Title>
 
-        <div className="flex items-center justify-center gap-[5rem]">
+        <div className="flex flex-wrap items-center justify-center gap-[5rem]">
           <div className="w-[16.25rem] flex flex-col gap-[1.875rem]">
             <div className="border border-1 border-black rounded-[0.75rem]">
               <Image src={SpiderLinkBenefitImg001} alt="" />
