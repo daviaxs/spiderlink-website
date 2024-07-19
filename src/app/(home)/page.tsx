@@ -58,7 +58,7 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col items-center justify-start gap-[1.875rem]">
-        <Title className="text-center">Com a SpiderLink, você pode</Title>
+        <Title>Com a SpiderLink, você pode</Title>
 
         <div className="flex flex-wrap items-start justify-center gap-[5rem]">
           {Benefits.map(({ img, title, description }) => (
@@ -71,11 +71,9 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col gap-[1.25rem]">
-                <SubTitle className="text-center">{title}</SubTitle>
+                <SubTitle>{title}</SubTitle>
 
-                <Text className="text-center opacity-90 font-bold">
-                  {description}
-                </Text>
+                <Text className="opacity-90 font-bold">{description}</Text>
               </div>
             </div>
           ))}
