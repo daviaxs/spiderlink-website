@@ -6,6 +6,7 @@ import { Title } from '@/shared/components/texts/Title'
 import { Text } from '@/shared/components/texts/Text'
 import { Benefits } from './utils/Benefits'
 import { SubTitle } from '@/shared/components/texts/SubTitle'
+import { Card } from '@/shared/components/card'
 
 export default function Home() {
   return (
@@ -79,6 +80,17 @@ export default function Home() {
           ))}
         </div>
       </div>
+
+      <Card.Root>
+        <Card.Title>Economize Sem Comprometer a Qualidade</Card.Title>
+
+        <Card.Description>
+          Na SpiderLink, entendemos que cada centavo conta, especialmente para
+          pequenos negócios. Por isso, oferecemos soluções acessíveis que não
+          sacrificam a qualidade. Nosso objetivo é ajudar seu Food Service a
+          brilhar online sem pesar no seu bolso.
+        </Card.Description>
+      </Card.Root>
     </>
   )
 }
