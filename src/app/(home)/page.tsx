@@ -7,6 +7,7 @@ import { Text } from '@/shared/components/texts/Text'
 import { Benefits01 } from './utils/Benefits01'
 import { SubTitle } from '@/shared/components/texts/SubTitle'
 import { Card } from '@/shared/components/card'
+import { Benefits02 } from './utils/Benefits02'
 
 export default function Home() {
   return (
@@ -91,6 +92,29 @@ export default function Home() {
           brilhar online sem pesar no seu bolso.
         </Card.Description>
       </Card.Root>
+
+      <div className="flex flex-col gap-[1.875rem]">
+        <Title>Benefícios</Title>
+
+        <div className="flex flex-wrap items-start justify-center gap-[3.75rem]">
+          {Benefits02.map(({ icon, title, description }) => (
+            <div
+              key={title}
+              className="flex flex-col items-center justify-start gap-[1.25rem] w-[250px]"
+            >
+              <div className="bg-purple bg-opacity-20 flex items-center justify-center w-[50px] h-[50px] rounded-xl">
+                {icon}
+              </div>
+
+              <div className="flex flex-col items-center justify-start gap-[1.25rem]">
+                <SubTitle>{title}</SubTitle>
+
+                <Text className="opacity-90">{description}</Text>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </>
   )
 }
