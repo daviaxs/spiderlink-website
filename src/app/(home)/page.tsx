@@ -9,6 +9,7 @@ import { SubTitle } from '@/shared/components/texts/SubTitle'
 import { Card } from '@/shared/components/card'
 import { Benefits02 } from './utils/Benefits02'
 import { ChevronRight } from 'lucide-react'
+import { Services } from './utils/Services'
 
 export default function Home() {
   return (
@@ -134,6 +135,37 @@ export default function Home() {
           </Button>
         </Link>
       </Card.Root>
+
+      <div className="flex flex-col items-center justify-start gap-[1.875rem]">
+        <Title>Experimente Gratuitamente por 2 Semanas</Title>
+        <Text>Descubra a revolução do seu Food Service sem compromisso.</Text>
+
+        <div className="flex flex-wrap items-start justify-center gap-[5rem]">
+          {Services.map(({ img, title, description }) => (
+            <div
+              className="w-[16.25rem] flex flex-col gap-[1.25rem]"
+              key={title}
+            >
+              <div className="flex flex-col items-center justify-between border border-1 border-black rounded-[0.75rem] overflow-hidden pt-2">
+                <Image
+                  src={img}
+                  alt=""
+                  className="w-[230px] h-[187px]"
+                  priority
+                />
+
+                <div className="flex items-center justify-center bg-purple py-3 w-full">
+                  <SubTitle className="text-white font-extrabold">
+                    {title}
+                  </SubTitle>
+                </div>
+              </div>
+
+              <Text>{description}</Text>
+            </div>
+          ))}
+        </div>
+      </div>
     </>
   )
 }
