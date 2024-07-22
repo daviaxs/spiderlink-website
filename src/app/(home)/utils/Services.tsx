@@ -11,17 +11,17 @@ export const Services = [
   },
   {
     img: SpiderLinkServiceImg002,
-    title: 'Melhorar o atendimento ao cliente',
+    title: 'Sem Compromissos',
     description: 'Cancele a qualquer momento',
   },
   {
     img: SpiderLinkServiceImg003,
-    title: 'Aumentar sua visibilidade online',
+    title: 'Fácil e Rápido',
     description: 'Tenha seu próprio site em instantes',
   },
   {
     img: SpiderLinkServiceImg004,
-    title: 'Aumentar sua visibilidade online',
+    title: 'Suporte Total',
     description: 'Ajuda disponível 24/7',
   },
 ]
