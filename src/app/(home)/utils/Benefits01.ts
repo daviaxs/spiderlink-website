@@ -2,7 +2,7 @@ import SpiderLinkBenefitImg001 from '@/shared/assets/imgs/spider-link-benefit-im
 import SpiderLinkBenefitImg002 from '@/shared/assets/imgs/spider-link-benefit-img-002.png'
 import SpiderLinkBenefitImg003 from '@/shared/assets/imgs/spider-link-benefit-img-003.png'
 
-export const Benefits = [
+export const Benefits01 = [
   {
     img: SpiderLinkBenefitImg001,
     title: 'Aumentar suas vendas',

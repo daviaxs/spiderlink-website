@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Title } from '@/shared/components/texts/Title'
 import { Text } from '@/shared/components/texts/Text'
-import { Benefits } from './utils/Benefits'
+import { Benefits01 } from './utils/Benefits01'
 import { SubTitle } from '@/shared/components/texts/SubTitle'
 import { Card } from '@/shared/components/card'
 
@@ -62,7 +62,7 @@ export default function Home() {
         <Title>Com a SpiderLink, você pode</Title>
 
         <div className="flex flex-wrap items-start justify-center gap-[5rem]">
-          {Benefits.map(({ img, title, description }) => (
+          {Benefits01.map(({ img, title, description }) => (
             <div
               className="w-[16.25rem] flex flex-col gap-[1.875rem]"
               key={title}
