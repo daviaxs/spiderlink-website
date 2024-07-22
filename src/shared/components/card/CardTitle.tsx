@@ -1,10 +1,12 @@
 import { ReactNode } from 'react'
 import { SubTitle } from '../texts/SubTitle'
+import { cn } from '@/lib/utils'
 
 interface CardTitleProps {
   children: ReactNode
+  className?: string | undefined
 }
 
-export function CardTitle({ children }: CardTitleProps) {
-  return <SubTitle className="text-white">{children}</SubTitle>
+export function CardTitle({ className, children }: CardTitleProps) {
+  return <SubTitle className={cn('text-white', className)}>{children}</SubTitle>
 }
