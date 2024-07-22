@@ -8,6 +8,7 @@ import { Benefits01 } from './utils/Benefits01'
 import { SubTitle } from '@/shared/components/texts/SubTitle'
 import { Card } from '@/shared/components/card'
 import { Benefits02 } from './utils/Benefits02'
+import { ChevronRight } from 'lucide-react'
 
 export default function Home() {
   return (
@@ -115,6 +116,24 @@ export default function Home() {
           ))}
         </div>
       </div>
+
+      <Card.Root className="bg-purple">
+        <Card.Title>Sua Confiança é Nossa Prioridade</Card.Title>
+
+        <Card.Description className="opacity-100">
+          Na SpiderLink, sabemos que a confiança é fundamental para qualquer
+          parceria de sucesso. É por isso que nos dedicamos a oferecer um
+          serviço de qualidade e suporte excepcional para garantir que você se
+          sinta seguro ao escolher nossa plataforma.
+        </Card.Description>
+
+        <Link href={'/plans'}>
+          <Button className="bg-white text-black">
+            <p className="font-black">COMECE HOJE MESMO</p>
+            <ChevronRight />
+          </Button>
+        </Link>
+      </Card.Root>
     </>
   )
 }
