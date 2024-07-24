@@ -1,12 +1,12 @@
 import { cn } from '@/lib/utils'
 import { HTMLAttributes, ReactNode } from 'react'
 
-interface TitleProps extends HTMLAttributes<HTMLHeadingElement> {
+interface TitleH2Props extends HTMLAttributes<HTMLHeadingElement> {
   children: ReactNode
   className?: string | undefined
 }
 
-export function Title({ children, className }: TitleProps) {
+export function TitleH2({ children, className }: TitleH2Props) {
   return (
     <h2
       className={cn(
