@@ -28,10 +28,12 @@ export function Header() {
         </div>
       </Link>
 
-      <Button className="h-full">
-        <p className="max-sm:text-[0.7rem] text-white">COMECE GRÁTIS</p>
-        <Handshake className="max-sm:hidden" />
-      </Button>
+      <Link href="/plans">
+        <Button className="h-full">
+          <p className="max-sm:text-[0.7rem] text-white">COMECE GRÁTIS</p>
+          <Handshake className="max-sm:hidden" />
+        </Button>
+      </Link>
     </header>
   )
 }
