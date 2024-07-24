@@ -30,7 +30,9 @@ export default function Home() {
             </p>
           </div>
 
-          <Button className="w-fit">AGENDE UM TESTE</Button>
+          <Link href={'/plans'}>
+            <Button className="w-fit">AGENDE UM TESTE</Button>
+          </Link>
         </div>
 
         <Image src={SpiderLinkApplicationImgsDemo} alt="" />
