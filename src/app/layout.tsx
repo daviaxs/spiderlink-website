@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className={nunito.className}>
         <div>
           <Header />
-          <main className="flex flex-col px-[3.75rem] py-[2rem] gap-[3.75rem] max-md:px-[2rem] max-sm:px-[1rem]">
+          <main className="flex flex-col items-center px-[3.75rem] py-[2rem] gap-[3.75rem] max-md:px-[2rem] max-sm:px-[1rem]">
             {children}
           </main>
         </div>
