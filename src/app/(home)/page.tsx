@@ -2,14 +2,15 @@ import { Button } from '@/shared/components/button/Button'
 import SpiderLinkApplicationImgsDemo from '@/shared/assets/imgs/spider-link-application-imgs-demo.png'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Title } from '@/shared/components/texts/Title'
+import { TitleH2 } from '@/shared/components/texts/TitleH2'
 import { Text } from '@/shared/components/texts/Text'
 import { Benefits01 } from './utils/Benefits01'
-import { SubTitle } from '@/shared/components/texts/SubTitle'
+import { TitleH3 } from '@/shared/components/texts/TitleH3'
 import { Card } from '@/shared/components/card'
 import { Benefits02 } from './utils/Benefits02'
 import { ChevronRight } from 'lucide-react'
 import { Services } from './utils/Services'
+import { TitleH1 } from '@/shared/components/texts/TitleH1'
 
 export default function Home() {
   return (
@@ -17,10 +18,10 @@ export default function Home() {
       <div className="flex items-center w-full justify-between gap-[6rem] max-lg:flex-col max-lg:gap-[4rem]">
         <div className="flex flex-col gap-[1.875rem] max-lg:text-center max-lg:items-center lg:w-[50%]">
           <div>
-            <h1 className="font-black text-[3rem] leading-tight max-sm:text-[2rem]">
+            <TitleH1>
               Descomplique a Gestão do Seu{' '}
               <span className="text-purple">Food Service.</span>
-            </h1>
+            </TitleH1>
 
             <p className="font-bold text-[1rem] leading-tight opacity-90 max-sm:text-[0.8rem]">
               Transforme a presença online do seu restaurante com a SpiderLink,
@@ -39,7 +40,7 @@ export default function Home() {
       </div>
 
       <div className="relative flex flex-col outline outline-1 rounded-[1.25rem] gap-[1.875rem] w-full h-fit py-[4.375rem] px-[1.875rem] text-center overflow-hidden">
-        <Title>Pronto para transformar seu negócio?</Title>
+        <TitleH2>Pronto para transformar seu negócio?</TitleH2>
 
         <div>
           <Text className="opacity-90">
@@ -64,7 +65,7 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col items-center justify-start gap-[1.875rem]">
-        <Title>Com a SpiderLink, você pode</Title>
+        <TitleH2>Com a SpiderLink, você pode</TitleH2>
 
         <div className="flex flex-wrap items-start justify-center gap-[5rem]">
           {Benefits01.map(({ img, title, description }) => (
@@ -77,7 +78,7 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col gap-[1.25rem]">
-                <SubTitle>{title}</SubTitle>
+                <TitleH3>{title}</TitleH3>
 
                 <Text className="opacity-90 font-bold">{description}</Text>
               </div>
@@ -98,7 +99,7 @@ export default function Home() {
       </Card.Root>
 
       <div className="flex flex-col gap-[1.875rem]">
-        <Title>Benefícios</Title>
+        <TitleH2>Benefícios</TitleH2>
 
         <div className="flex flex-wrap items-start justify-center gap-[3.75rem]">
           {Benefits02.map(({ icon, title, description }) => (
@@ -111,7 +112,7 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col items-center justify-start gap-[1.25rem]">
-                <SubTitle>{title}</SubTitle>
+                <TitleH3>{title}</TitleH3>
 
                 <Text className="opacity-90">{description}</Text>
               </div>
@@ -139,7 +140,7 @@ export default function Home() {
       </Card.Root>
 
       <div className="flex flex-col items-center justify-start gap-[1.875rem]">
-        <Title>Experimente Gratuitamente por 2 Semanas</Title>
+        <TitleH2>Experimente Gratuitamente por 2 Semanas</TitleH2>
         <Text>Descubra a revolução do seu Food Service sem compromisso.</Text>
 
         <div className="flex flex-wrap items-start justify-center gap-[5rem]">
@@ -157,9 +158,9 @@ export default function Home() {
                 />
 
                 <div className="flex items-center justify-center bg-purple py-3 w-full">
-                  <SubTitle className="text-white font-extrabold">
+                  <TitleH3 className="text-white font-extrabold">
                     {title}
-                  </SubTitle>
+                  </TitleH3>
                 </div>
               </div>
 
