@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
-import { SubTitle } from '../texts/SubTitle'
 import { cn } from '@/lib/utils'
+import { TitleH3 } from '../texts/TitleH3'
 
 interface CardTitleProps {
   children: ReactNode
@@ -8,5 +8,5 @@ interface CardTitleProps {
 }
 
 export function CardTitle({ className, children }: CardTitleProps) {
-  return <SubTitle className={cn('text-white', className)}>{children}</SubTitle>
+  return <TitleH3 className={cn('text-white', className)}>{children}</TitleH3>
 }
