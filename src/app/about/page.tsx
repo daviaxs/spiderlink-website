@@ -9,7 +9,7 @@ export default function About() {
   return (
     <>
       <div className="max-w-[600px] flex flex-col items-center gap-[1.875rem]">
-        <TitleH1>Conheça a SpiderLink</TitleH1>
+        <TitleH1 className="text-center">Conheça a SpiderLink</TitleH1>
 
         <Text className="opacity-90">
           Nesta página, você descobrirá o que motiva a SpiderLink, nosso foco em
