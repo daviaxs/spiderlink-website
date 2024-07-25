@@ -34,7 +34,7 @@ export default function About() {
         <div className="flex flex-col items-center justify-start w-full gap-[1.875rem]">
           {WhatWeDo.map(({ icon, title, description }) => (
             <div
-              className="flex gap-7 bg-black bg-opacity-[3%] rounded-[1.25rem] w-full px-[1.875rem] py-[0.938rem]"
+              className="flex gap-7 bg-black bg-opacity-[3%] rounded-[1.25rem] w-full px-[1.875rem] py-[0.938rem] max-sm:flex-col max-sm:items-center"
               key={title}
             >
               <div className="flex items-center justify-center bg-purple bg-opacity-20 rounded-[1.25rem] min-w-[120px] min-h-[120px] max-w-[120px] max-h-[120px]">
@@ -42,9 +42,9 @@ export default function About() {
               </div>
 
               <div className="flex flex-col gap-2 mt-2">
-                <TitleH3 className="text-purple text-left">{title}</TitleH3>
+                <TitleH3 className="text-purple sm:text-left">{title}</TitleH3>
 
-                <Text className="text-left opacity-90">{description}</Text>
+                <Text className="sm:text-left opacity-90">{description}</Text>
               </div>
             </div>
           ))}
