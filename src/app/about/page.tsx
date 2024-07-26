@@ -4,6 +4,7 @@ import { TitleH1 } from '@/shared/components/texts/TitleH1'
 import { TitleH2 } from '@/shared/components/texts/TitleH2'
 import { TitleH3 } from '@/shared/components/texts/TitleH3'
 import { WhatWeDo } from './utils/WhatWeDo'
+import { WhyChooseUs } from './utils/WhyChooseUs'
 
 export default function About() {
   return (
@@ -45,6 +46,27 @@ export default function About() {
                 <TitleH3 className="text-purple sm:text-left">{title}</TitleH3>
 
                 <Text className="sm:text-left opacity-90">{description}</Text>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="flex flex-col gap-[1.875rem] w-full">
+        <TitleH2>Por Que Escolher a SpiderLink</TitleH2>
+
+        <div className="flex flex-col gap-[1.875rem]">
+          {WhyChooseUs.map(({ title, description }) => (
+            <div
+              className="flex flex-col items-center justify-center bg-purple gap-[1.5rem] px-[0.313rem] pb-[0.313rem] pt-[1.5rem] rounded-xl"
+              key={title}
+            >
+              <TitleH3 className="text-white leading-none">{title}</TitleH3>
+
+              <div className="bg-white w-full px-4 sm:px-[1.875rem] py-[0.938rem] rounded-md">
+                <Text className="font-extrabold text-purple">
+                  {description}
+                </Text>
               </div>
             </div>
           ))}
