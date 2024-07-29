@@ -5,6 +5,8 @@ import { TitleH2 } from '@/shared/components/texts/TitleH2'
 import { TitleH3 } from '@/shared/components/texts/TitleH3'
 import { WhatWeDo } from './utils/WhatWeDo'
 import { WhyChooseUs } from './utils/WhyChooseUs'
+import { Button } from '@/shared/components/button/Button'
+import { ArrowUpRight } from 'lucide-react'
 
 export default function About() {
   return (
@@ -70,6 +72,28 @@ export default function About() {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+
+      <div className="flex flex-col items-center justify-start gap-8">
+        <div className="flex flex-col gap-4">
+          <TitleH2>E aí, Vai Ficar de Fora?</TitleH2>
+
+          <Text className="font-extrabold max-w-[900px]">
+            Experimente nosso plano gratuito por 2 semanas e veja como nossa
+            plataforma pode transformar seu negócio. Não perca tempo, comece
+            agora!
+          </Text>
+        </div>
+
+        <div className="flex items-center justify-center gap-8 max-sm:flex-col max-sm:gap-4">
+          <Button className="bg-black text-white max-sm:w-full">
+            AGENDE UM TESTE
+          </Button>
+
+          <Button className="bg-white text-black outline outline-1 outline-black max-sm:w-full">
+            VEJA UMA LOJA MODELO <ArrowUpRight />
+          </Button>
         </div>
       </div>
     </>
