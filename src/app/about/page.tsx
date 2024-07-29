@@ -7,6 +7,7 @@ import { WhatWeDo } from './utils/WhatWeDo'
 import { WhyChooseUs } from './utils/WhyChooseUs'
 import { Button } from '@/shared/components/button/Button'
 import { ArrowUpRight } from 'lucide-react'
+import Link from 'next/link'
 
 export default function About() {
   return (
@@ -87,13 +88,17 @@ export default function About() {
         </div>
 
         <div className="flex items-center justify-center gap-8 max-sm:flex-col max-sm:gap-4">
-          <Button className="bg-black text-white max-sm:w-full">
-            AGENDE UM TESTE
-          </Button>
+          <Link href={'/plans'}>
+            <Button className="bg-black text-white max-sm:w-full">
+              AGENDE UM TESTE
+            </Button>
+          </Link>
 
-          <Button className="bg-white text-black outline outline-1 outline-black max-sm:w-full">
-            VEJA UMA LOJA MODELO <ArrowUpRight />
-          </Button>
+          <Link href={'https://www.spider-link.pro'} target="_blank">
+            <Button className="bg-white text-black outline outline-1 outline-black max-sm:w-full">
+              VEJA UMA LOJA MODELO <ArrowUpRight />
+            </Button>
+          </Link>
         </div>
       </div>
     </>
